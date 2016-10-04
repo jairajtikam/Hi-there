@@ -1,7 +1,7 @@
 
-
+var result = 0;
 function score(){
-	var result = 0;
+	
 	var z = [];
 	
 	var a = document.getElementsByName('ans1');
@@ -70,18 +70,71 @@ function score(){
         z[10] = k[i].value;
     }
 	}
+	var l = document.getElementsByName('ans12');
+	for(var i = 0; i < 4; i++){
+    if(l[i].checked){
+        z[11] = l[i].value;
+    }
+	}
+	var m = document.getElementsByName('ans13');
+	for(var i = 0; i < 4; i++){
+    if(m[i].checked){
+        z[12] = m[i].value;
+    }
+	}
+	var n = document.getElementsByName('ans14');
+	for(var i = 0; i < 4; i++){
+    if(n[i].checked){
+        z[13] = n[i].value;
+    }
+	}
+	var o = document.getElementsByName('ans15');
+	for(var i = 0; i < 4; i++){
+    if(o[i].checked){
+        z[14] = o[i].value;
+    }
+	}
+	var p = document.getElementsByName('ans16');
+	for(var i = 0; i < 4; i++){
+    if(p[i].checked){
+        z[15] = p[i].value;
+    }
+	}
+	var q = document.getElementsByName('ans17');
+	for(var i = 0; i < 4; i++){
+    if(q[i].checked){
+        z[16] = q[i].value;
+    }
+	}
+	var r = document.getElementsByName('ans18');
+	for(var i = 0; i < 4; i++){
+    if(r[i].checked){
+        z[17] = r[i].value;
+    }
+	}
+	var s = document.getElementsByName('ans19');
+	for(var i = 0; i < 4; i++){
+    if(s[i].checked){
+        z[18] = s[i].value;
+    }
+	}
+	var t = document.getElementsByName('ans20');
+	for(var i = 0; i < 4; i++){
+    if(t[i].checked){
+        z[19] = t[i].value;
+    }
+	}
 	
-	
-	
-	
-	for(var i=0;i<11;i++){
+	for(var i=0;i<20;i++){
 		result = result + parseInt(z[i]);
 	}
 	
-	if(result > 20){
+	
+	}
+	
+	if(result > 50){
 		document.write("Depressed");
 	}else{
 		document.write("Not Depressed");
-	}
 	}
 	
