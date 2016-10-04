@@ -128,13 +128,13 @@ function score(){
 	for(var i=0;i<20;i++){
 		result = result + parseInt(z[i]);
 	}
-	
-	
-	}
-	
 	if(result > 50){
 		document.write("Depressed");
 	}else{
 		document.write("Not Depressed");
 	}
+	
+	}
+	
+	
 	
