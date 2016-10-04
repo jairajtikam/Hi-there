@@ -128,10 +128,13 @@ function score(){
 	for(var i=0;i<20;i++){
 		result = result + parseInt(z[i]);
 	}
-	if(result > 50){
-		document.write("Depressed");
+	
+	if(result > 60){
+		window.location.href = "4.html";
+	}else if(result > 40){
+		window.location.href = "3.html";
 	}else{
-		document.write("Not Depressed");
+		window.location.href = "2.html";
 	}
 	
 	}
